@@ -1,14 +1,71 @@
 :root {
-    font-size: 1px;
+    font-size: 1.5px;
 }
 
 html * {
     font-size: 16rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
-    background-color: #fcc310;
+body {
+    margin: 0;
+    padding: 0 15% 0 15%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
     width: 100%;
 
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header>img {
+    transition: all linear .2s;
+    height: 600rem;
+}
+
+header.small>img {
+    height: 400rem;
+}
+
+#content {
+    margin: 0;
+    padding: 0 15% 0 15%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 16rem 0 16rem 0;
+
+    background-color: #c0c0c0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbarGomb {
+    padding: 16rem;
+    margin: 1rem;
+
+    text-decoration: none;
+
+    color: rgb(116, 116, 116)
+}
+
+.navbarGomb#aktiv {
+    color: black;
 }
