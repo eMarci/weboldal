@@ -1,0 +1,14 @@
+:root {
+    font-size: 1px;
+}
+
+html * {
+    font-size: 16rem;
+}
+
+nav {
+    background-color: #fcc310;
+    width: 100%;
+
+    display: flex;
+}
