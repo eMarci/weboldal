@@ -46,10 +46,8 @@ nav {
     width: 15%;
 
     padding: 18rem 24rem;
-    /* margin: 20rem 1rem; */
     margin: auto;
 
-    /* border: 1px solid black; */
     border-radius: 100px;
 
     text-decoration: none;
@@ -68,7 +66,7 @@ nav {
 }
 
 .navbarGomb:hover {
-    transition: background-color linear .2s;
+    transition: background-color ease-in-out .2s;
     background-color: #fcc510cb;
 }
 
@@ -80,17 +78,17 @@ nav {
     height: 150rem;
 
     border-left: 2px solid rgba(0, 0, 0, 0.432);
-    /* border-radius: 10px; */
 
     margin: 20rem 40rem;
     display: flex;
 }
 
-main {
+.vertical-container {
     width: 100%;
 
-    /* margin: 30rem 0; */
-    
+    margin: 0;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -98,8 +96,25 @@ main {
     align-items: center;
 }
 
-main>div {
-    padding: 0 15%;
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -109,10 +124,9 @@ main>div {
 
 .colored {
     margin: 30rem 0;
-    padding: 50rem 15% !important;
+    padding: 50rem 15%;
 
-    box-shadow: 
-        0 1px 20px 1px rgb(112, 112, 112);
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
 }
 
 .colored * {
@@ -120,16 +134,39 @@ main>div {
     font-weight: 500;
 }
 
-.colored>img {
-    box-shadow: 0 1px 20px 1px black;
+.colored img {
+    width: 40%;
+    box-shadow: 0 0 20px 1px black;
 }
 
 #yellow {
     background-color: #fcc510c4;
 }
 
-#yellow>p {
+#yellow p {
     margin-right: 50rem;
+}
+
+#yellow img {
+    margin-left: 50rem;
+}
+
+#yellow>a {
+    transition: all ease-in-out .2s;
+    padding: 15rem 40rem;
+    
+    color: white;
+    background-color: rgb(32, 32, 32);
+    
+    text-decoration: none;
+    border-radius: 100px;
+
+    box-shadow: 0 0 10px 1px rgb(46, 46, 46);
+}
+
+#yellow>a:hover {
+    transform: translate(-4rem, -4rem);
+    box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
 }
 
 #red {
@@ -137,21 +174,24 @@ main>div {
     background-color: #e81225c4;
 }
 
-#red>p {
+#red p {
     margin-left: 50rem;
+}
+
+#red img {
+    margin-right: 50rem;
 }
 
 #green {
     background-color: #66cc00c4;
 }
 
-#green>p {
+#green p {
     margin-right: 50rem;
 }
 
-main>div>img {
-    width: 50%;
-    margin: 0 50rem;
+#green img {
+    margin-left: 50rem;
 }
 
 h1 {
