@@ -163,7 +163,7 @@ main {
 
     box-shadow: 0 0 10px 1px rgb(46, 46, 46);
 }
-
+/* teszt */
 #yellow>a:hover {
     transform: translate(-4rem, -4rem);
     box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
