@@ -1,21 +1,37 @@
 :root {
-    font-size: 1.5px;
+    font-size: 1px;
 }
 
+/* @media screen and (max-width: 2199px) {
+    :root {
+        font-size: 1px;
+    }
+    header { background-color: transparent; }
+}
+
+@media screen and (max-width: 1499px) {
+
+} */
+
 html * {
-    font-size: 16rem;
+    font-size: 14rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 body {
-    margin: 0;
-    padding: 0 15% 0 15%;
+    margin: 20rem 0;
+    /* padding: 0 15%; */
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
+    /* background: linear-gradient(180deg, rgba(252, 197, 16, 0.445) 0%, rgba(255, 255, 255, 0) 100rem); */
+    /* background: linear-gradient(180deg, rgba(232, 18, 37, 0.363) 0%, rgba(255, 255, 255, 0) 100rem); */
+    /* background: linear-gradient(180deg, rgba(102, 204, 0, 0.363) 0%, rgba(255, 255, 255, 0) 100rem); */
 }
 
 header {
@@ -24,33 +40,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-header>img {
-    transition: all linear .2s;
-    height: 600rem;
-}
-
-header.small>img {
-    height: 400rem;
-}
-
-#content {
-    margin: 0;
-    padding: 0 15% 0 15%;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
 }
 
-nav {
-    margin: 16rem 0 16rem 0;
+header>nav * {
+    font-size: 22rem;
+}
 
-    background-color: #c0c0c0;
+nav {
+    margin: 14rem 0;
+
     width: 100%;
+    max-width: 40vw;
 
     display: flex;
     flex-direction: row;
@@ -58,14 +59,100 @@ nav {
 }
 
 .navbarGomb {
-    padding: 16rem;
-    margin: 1rem;
+    width: 15%;
+
+    padding: 18rem 24rem;
+    /* margin: 20rem 1rem; */
+    margin: auto;
+
+    /* border: 1px solid black; */
+    border-radius: 100px;
 
     text-decoration: none;
 
-    color: rgb(116, 116, 116)
+    color: rgb(116, 116, 116);
+
+    vertical-align: middle;
+    text-align: center;
 }
 
 .navbarGomb#aktiv {
+    background-color: #fcc510b0;
+    
     color: black;
+    font-weight: 700;
+}
+
+.navbarGomb:hover {
+    transition: background-color linear .2s;
+    background-color: #fcc510cb;
+}
+
+.navbarGomb:hover {
+    font-weight: 500;
+}
+
+.vl {
+    height: 150rem;
+
+    border-left: 2px solid rgba(0, 0, 0, 0.432);
+    /* border-radius: 10px; */
+
+    margin: 20rem;
+}
+
+main {
+    width: 100%;
+
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    padding: 0 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#yellow, #red, #green {
+    margin: 30rem 0;
+    padding: 50rem 15% !important;
+
+    box-shadow: 
+        0 1px 20px 1px rgb(112, 112, 112);
+}
+
+#yellow *, #red *, #green * {
+    font-size: 24rem;
+    font-weight: 500;
+}
+
+#yellow {
+    background-color: #fcc510c4;
+}
+
+#red {
+    color: white;
+    background-color: #e81225c4;
+}
+
+#green {
+    background-color: #66cc00c4;
+}
+
+main>div>img {
+    width: 50%;
+    margin: 0 50rem;
+}
+
+h1 {
+    font-size: 50rem;
 }
