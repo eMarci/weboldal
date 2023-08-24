@@ -220,7 +220,7 @@ h1 {
     font-size: 50rem;
 }
 
-#divider {
+.divider {
     height: 80rem;
     margin: 30rem 0;
 }
@@ -241,4 +241,12 @@ footer {
 
 footer * {
     font-size: inherit;
+}
+
+footer .vl {
+    margin: 0 90rem;
+}
+
+footer img {
+    height: 150rem;
 }
