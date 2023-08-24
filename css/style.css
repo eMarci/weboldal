@@ -125,10 +125,15 @@ main {
 }
 
 .colored {
+    width: 100%;
     margin: 30rem 0;
-    padding: 80rem 15%;
+    padding: 80rem 0;
 
     box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+.colored>.horizontal {
+    padding: 0 15%;
 }
 
 .colored * {
@@ -220,7 +225,13 @@ h1 {
     font-size: 50rem;
 }
 
-#divider {
+.colored h2 {
+    font-size: 40rem;
+    font-weight: 700;
+    margin: 0 0 50rem 0;
+}
+
+.divider {
     height: 80rem;
     margin: 30rem 0;
 }
@@ -241,4 +252,12 @@ footer {
 
 footer * {
     font-size: inherit;
+}
+
+footer .vl {
+    margin: 0 90rem;
+}
+
+footer img {
+    height: 150rem;
 }
