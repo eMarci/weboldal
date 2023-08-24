@@ -225,6 +225,12 @@ h1 {
     font-size: 50rem;
 }
 
+.colored h2 {
+    font-size: 40rem;
+    font-weight: 700;
+    margin: 0 0 50rem 0;
+}
+
 .divider {
     height: 80rem;
     margin: 30rem 0;
