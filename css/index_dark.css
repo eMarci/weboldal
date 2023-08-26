@@ -1,11 +1,11 @@
-@import url("base.css");
+@import url("base_dark.css");
 
 .colored {
     width: 100%;
     margin: 30rem 0;
     padding: 80rem 0;
 
-    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
 }
 
 .colored>.horizontal {
@@ -31,7 +31,11 @@
 }
 
 #yellow {
-    background-color: #fcc510c4;
+    background-color: #fcc510dc;
+}
+
+#yellow * {
+    color: black;
 }
 
 #yellow a {
@@ -54,7 +58,7 @@
 
 #red {
     color: white;
-    background-color: #e81225c4;
+    background-color: #e81224a9;
 }
 
 #red a {
@@ -77,6 +81,10 @@
 
 #green {
     background-color: #66cc00c4;
+}
+
+#green * {
+    color: black;
 }
 
 #green a {

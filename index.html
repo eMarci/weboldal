@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/base.css">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css" title="light">
+        <link rel="stylesheet" type="text/css" href="./css/index_dark.css" title="dark" disabled>
+        <script src="scripts/styleswitcher.js"></script>
         <title>EIK - Kezdőlap</title>
     </head>
     <body>
@@ -19,6 +20,9 @@
                 <a class="navbarGomb" href="kapcsolat.html">Kapcsolat</a>
                 <a class="navbarGomb" href="csatlakozz.html">Csatlakozz!</a>
             </nav>
+            <div class="vl"></div>
+            <a href="#" onclick="setActiveStyleSheet('light')">Light</a>
+            <a href="#" onclick="setActiveStyleSheet('dark')">Dark</a>
         </header>
         <main>
             <div id="intro">

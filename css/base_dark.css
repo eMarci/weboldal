@@ -1,0 +1,176 @@
+:root {
+    font-size: 1px;
+}
+
+html * {
+    font-size: 14rem;
+    color: rgb(236, 236, 236);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+body {
+    margin: 50rem 0 80rem 0;
+
+    background-color: rgb(46, 45, 41);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: scroll;
+}
+
+header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header>nav * {
+    font-size: 22rem;
+}
+
+nav {
+    margin: 14rem 0;
+
+    width: 100%;
+    max-width: 40vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbarGomb {
+    transition: background-color ease-in-out .1s;
+
+    width: 15%;
+
+    padding: 18rem 24rem;
+    margin: auto;
+
+    border-radius: 100px;
+
+    text-decoration: none;
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navbarGomb#aktiv {
+    background-color: rgba(252, 197, 16, 0.918);
+    
+    color: black;
+    font-weight: 700;
+}
+
+.navbarGomb:hover {
+    background-color: rgba(252, 197, 16, 0.871);
+}
+
+.navbarGomb:hover {
+    font-weight: 500;
+}
+
+.vl {
+    height: 150rem;
+
+    border-left: 2px solid rgba(0, 0, 0, 0.432);
+
+    margin: 20rem 40rem;
+    display: flex;
+}
+
+.vertical-container {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 50rem;
+}
+
+.colored h2 {
+    font-size: 40rem;
+    font-weight: 700;
+    margin: 0 0 50rem 0;
+}
+
+.divider {
+    height: 80rem;
+    margin: 30rem 0;
+}
+
+footer {
+    width: 100%;
+    
+    margin: 0;
+
+    font-size: 24rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer * {
+    font-size: inherit;
+}
+
+footer .vl {
+    margin: 0 90rem;
+}
+
+footer img {
+    height: 150rem;
+}
+
+.divider {
+    display: none;
+}
