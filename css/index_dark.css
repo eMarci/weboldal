@@ -39,7 +39,9 @@
 }
 
 #yellow a {
-    transition: all ease-in-out .1s;
+    transition: 
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
     padding: 15rem 40rem;
 
     color: white;
@@ -62,7 +64,9 @@
 }
 
 #red a {
-    transition: all ease-in-out .1s;
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
     padding: 15rem 40rem;
 
     color: rgb(0, 0, 0);
@@ -80,7 +84,7 @@
 }
 
 #green {
-    background-color: #66cc00c4;
+    background-color: rgb(93, 177, 7);
 }
 
 #green * {
@@ -88,7 +92,9 @@
 }
 
 #green a {
-    transition: all ease-in-out .1s;
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
     padding: 15rem 40rem;
 
     color: rgb(255, 255, 255);

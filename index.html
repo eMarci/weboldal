@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/index.css" title="light">
-        <link rel="stylesheet" type="text/css" href="./css/index_dark.css" title="dark" disabled>
-        <script src="scripts/styleswitcher.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="./css/index.css" title="light"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="./css/index_dark.css" title="dark" disabled> -->
+        <!-- <script src="scripts/styleswitcher.js"></script> -->
+        <link id="style" rel="stylesheet" href="css/index.css">
+        <script src="scripts/theme.js"></script>
         <title>EIK - Kezdőlap</title>
     </head>
     <body>
         <header>
             <div id="header-logo">
-                <img src="media/images/banner_small.png" alt="Eötvös Informatikai Kör logója">
+                <img class="light" src="media/images/banner_small.png" alt="Eötvös Informatikai Kör logója">
+                <img class="dark" src="media/images/banner_dark_small.png" alt="Eötvös Informatikai Kör logója">
             </div>
             <div class="vl"></div>
             <nav>
@@ -21,14 +24,17 @@
                 <a class="navbarGomb" href="csatlakozz.html">Csatlakozz!</a>
             </nav>
             <div class="vl"></div>
-            <a href="#" onclick="setActiveStyleSheet('light')">Light</a>
-            <a href="#" onclick="setActiveStyleSheet('dark')">Dark</a>
+            <label class="switch">
+                <input id="themeSwitch" type="checkbox" onclick="swap()">
+                <span class="slider"></span>
+            </label>
         </header>
         <main>
             <div id="intro">
                 <h1>Üdvözlünk az EIK hivatalos oldalán!</h1>
             </div>
-            <img class="divider" src="media/images/divider.png" alt="Elválasztó">
+            <img class="light divider" src="media/images/divider.png" alt="Elválasztó">
+            <img class="dark divider" src="media/images/divider_dark.png" alt="Elválasztó">
             <div id="yellow" class="vertical colored">
                 <h2>Kik vagyunk mi?</h2>
                 <div class="horizontal">
@@ -91,7 +97,8 @@
                     <img src="media/images/csoportkep1_small.jpg" alt="Csatlakozz!">
                 </div>
             </div>
-            <img class="divider" src="media/images/divider.png" alt="Elválasztó">
+            <img class="light divider" src="media/images/divider.png" alt="Elválasztó">
+            <img class="dark divider" src="media/images/divider_dark.png" alt="Elválasztó">
         </main>
         <footer>
             <div class="horizontal">
