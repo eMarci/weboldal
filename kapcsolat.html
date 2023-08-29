@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/kapcsolat.css">
         <title>EIK - Rólunk</title>
     </head>
@@ -27,8 +26,8 @@
             <div id="intro">
                 <h1>Kapcsolat</h1>
             </div>
-            <img class="divider" src="media/images/divider.png" alt="Elválasztó">
-            <div class="horizontal">
+            <div class="divider"></div>
+            <!-- <div class="horizontal">
                 <div class="vertical">
                     <p>
                         Kérdéseiddel, ötleteiddel vagy esetleg csatlakozási szándékoddal
@@ -55,8 +54,43 @@
                         <input type="submit" value="Küldés">
                     </form>
                 </div>
+            </div> -->
+            <div id="yellow" class="colored">
+                <img id="map" src="media/images/map_small.png" alt="Az ELTE Lágymányosi kampuszának második emeletének térképe, rajta megjelölve az EIK szoba.">
+                <div class="vl"></div>
+                <div class="vertical">
+                    <h2>Keress minket az alábbi elérhetőségeink egyikén!</h2>
+                    <p>Email: eotvos.informatikai.kor@gmail.com</p>
+                    <div class="horizontal icons">
+                        <a href="https://www.facebook.com/eotvos.informatikai.kor" target="_blank">
+                            <img src="media/images/facebook_icon.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/eikdiakkor/" target="_blank">
+                            <img src="media/images/instagram_icon.png" alt="">
+                        </a>
+                        <a href="https://linktr.ee/eikdiakkor" target="_blank">
+                            <img src="media/images/linktree_logo.png" alt="">
+                        </a>
+                    </div>
+                    <p>Személyesen a Déli épület 2.711C termében talász minket.</p>
+                </div>
             </div>
-            <img class="divider" src="media/images/divider.png" alt="Elválasztó">
+            <div class="divider"></div>
+            <h2>Írj nekünk!</h2>
+            <form action="mailto:">
+                <fieldset>
+                    <input type="text" id="nev" name="nev" size="30" maxlength="30" placeholder="Név" required>
+                    <input type="text" id="email" name="email" size="30" maxlength="30" placeholder="Email" required>
+                </fieldset>
+                <fieldset>
+                    <input type="text" id="targy" name="targy" size="30" maxlength="30" placeholder="Tárgy" required>
+                </fieldset>
+                <fieldset>
+                    <textarea id="uzenet" name="uzenet" cols="60" rows="6" placeholder="Üzenet" required></textarea>
+                </fieldset>
+                <input type="submit" value="Küldés">
+            </form>
+            <div class="divider"></div>
         </main>
         <footer>
             <div class="horizontal">

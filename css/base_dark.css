@@ -37,17 +37,13 @@ header>.vl {
 }
 
 .divider {
-    background-image: url("../media/images/divider_dark.png");
+    filter: invert(100%);
 }
 
 h1, footer {
     color: white;
 }
-/* 
-.light {
-    display: none;
-}
 
-.dark {
-    display: inherit;
-} */
+footer .icons>a {
+    filter: invert(100%);
+}

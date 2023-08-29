@@ -1,6 +1,8 @@
-:root {
-    font-size: 1px;
-}
+/* @media screen and (min-width: 1850px) { */
+    :root {
+        font-size: 1px;
+    }
+/* } */
 
 html * {
     font-size: 14rem;
@@ -46,6 +48,7 @@ header {
     height: 110rem;
     background-image: url("../media/images/banner_small.png");
     background-size: cover;
+    background-repeat: none;
 }
 
 header>nav * {
@@ -158,14 +161,14 @@ h1 {
     font-size: 50rem;
 }
 
-.colored h2 {
+h2, .colored h2 {
     font-size: 40rem;
     font-weight: 700;
     margin: 0 0 50rem 0;
 }
 
 .divider {
-    transition: background-image linear .1s;
+    transition: filter linear .1s;
     height: 80rem;
     width: 727rem;
     margin: 30rem 0;
@@ -253,15 +256,53 @@ input:checked+.slider:before {
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
+
 /* 
-.light, .dark {
-    transition: display linear .1s;
+@media screen and (max-width: 1849px) and (min-width: 1000px) {
+    :root {
+        font-size: .8px;
+    }
 }
 
-.light {
-    display: inherit;
-}
+@media screen and (max-width: 999px) {
+    :root {
+        font-size: .8px;
+    }
 
-.dark {
-    display: none;
+    #banner {
+        width: 300rem;
+        height: 80rem;
+    }
 } */
+
+footer .icons>a {
+    transition: filter linear .1s;
+    margin: 40rem 20rem;
+    width: 30rem;
+    height: 30rem;
+    background-size: cover;
+}
+
+#facebook {
+    background-image: url("../media/images/facebook_icon.png");
+}
+
+#instagram {
+    background-image: url("../media/images/instagram_icon.png");
+}
+
+#email {
+    background-image: url("../media/images/email_icon.png")
+}
+
+footer .icons>a>img {
+    height: 30rem;
+}
+
+.icons>a {
+    margin: 40rem 20rem;
+}
+
+.icons>a>img {
+    height: 50rem;
+}
