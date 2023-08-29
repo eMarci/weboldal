@@ -40,6 +40,14 @@ header {
     align-items: center;
 }
 
+#banner {
+    transition: background-image linear .1s;
+    width: 363rem;
+    height: 110rem;
+    background-image: url("../media/images/banner_small.png");
+    background-size: cover;
+}
+
 header>nav * {
     font-size: 22rem;
 }
@@ -157,8 +165,12 @@ h1 {
 }
 
 .divider {
+    transition: background-image linear .1s;
     height: 80rem;
+    width: 727rem;
     margin: 30rem 0;
+    background-image: url("../media/images/divider.png");
+    background-size: cover;
 }
 
 footer {
@@ -241,7 +253,7 @@ input:checked+.slider:before {
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
-
+/* 
 .light, .dark {
     transition: display linear .1s;
 }
@@ -252,4 +264,4 @@ input:checked+.slider:before {
 
 .dark {
     display: none;
-}
+} */
