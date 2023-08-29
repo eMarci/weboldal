@@ -9,9 +9,7 @@
     </head>
     <body>
         <header>
-            <div id="header-logo">
-                <img src="media/images/banner_small.png" alt="Eötvös Informatikai Kör logója">
-            </div>
+            <div id="banner"></div>
             <div class="vl"></div>
             <nav>
                 <a class="navbarGomb" href="index.html">Kezdőlap</a>
@@ -19,6 +17,11 @@
                 <a class="navbarGomb" href="kapcsolat.html">Kapcsolat</a>
                 <a class="navbarGomb" id="aktiv" href="csatlakozz.html">Csatlakozz!</a>
             </nav>
+            <div class="vl"></div>
+            <label class="switch">
+                <input id="themeSwitch" type="checkbox" onclick="swap()">
+                <span class="slider"></span>
+            </label>
         </header>
         <main>
             <div id="intro">
