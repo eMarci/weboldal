@@ -112,21 +112,28 @@
 }
 
 #programok-gomb {
+    transition: transform ease-in-out .2s;
     position: fixed;
     bottom: 65rem;
     right: 100rem;
 
     padding: 20rem 40rem;
-    background: linear-gradient(63deg, rgba(123, 196, 255, 1) 0%, rgba(30, 154, 255, 1) 82%);
+    background: linear-gradient(-20deg, rgba(123, 196, 255, 1) 0%, rgba(30, 154, 255, 1) 82%);
     border-radius: 100px;
     box-shadow: 0 0 10px 1px rgb(73, 73, 73);
-}
 
-#programok-gomb * {
     color: white;
     font-size: 26rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+#programok-gomb:hover {
+    transform: scale(1.1);
+}
+
+#programok-gomb * {
+    font-size: inherit;
 }
 
 #programok-gomb img {
