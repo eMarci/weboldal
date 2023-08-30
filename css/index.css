@@ -8,7 +8,11 @@
     box-shadow: 0 0 20px 1px rgb(112, 112, 112);
 }
 
-.colored>.horizontal {
+/* .colored>.horizontal {
+    padding: 0 15%;
+} */
+
+.padded {
     padding: 0 15%;
 }
 
@@ -101,4 +105,29 @@
 #green a:hover {
     transform: translate(-4rem, -4rem);
     box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
+}
+
+#programok-gomb {
+    position: fixed;
+    bottom: 65rem;
+    right: 100rem;
+
+    padding: 20rem 40rem;
+    background: linear-gradient(63deg, rgba(123, 196, 255, 1) 0%, rgba(30, 154, 255, 1) 82%);
+    border-radius: 100px;
+    box-shadow: 0 0 10px 1px rgb(73, 73, 73);
+}
+
+#programok-gomb * {
+    color: white;
+    font-size: 26rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#programok-gomb img {
+    width: 20rem;
+
+    margin-left: 10rem;
+    filter: invert(100%);
 }

@@ -40,7 +40,7 @@ header>.vl {
     filter: invert(100%);
 }
 
-h1, footer {
+h1, h2, footer, p {
     color: white;
 }
 

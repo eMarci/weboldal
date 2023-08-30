@@ -4,6 +4,10 @@
     }
 /* } */
 
+html {
+    scroll-behavior: smooth;
+}
+
 html * {
     font-size: 14rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -138,6 +142,10 @@ main * {
     transition:
         background-color linear .1s,
         box-shadow linear .1s;
+}
+
+main p {
+    font-size: 24rem;
 }
 
 .vertical {
