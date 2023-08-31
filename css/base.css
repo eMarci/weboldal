@@ -1,8 +1,6 @@
-/* @media screen and (min-width: 1850px) { */
-    :root {
-        font-size: 1px;
-    }
-/* } */
+:root {
+    font-size: 1px;
+}
 
 html {
     scroll-behavior: smooth;
@@ -17,7 +15,6 @@ html * {
 body {
     transition: background-color linear .1s;
 
-    /* margin: 50rem 0 80rem 0; */
     margin: 0;
     margin-bottom: 80rem;
 
@@ -35,11 +32,6 @@ header {
     padding: 30rem 0;
     margin-bottom: 50rem;
 
-    background-color: rgb(228, 227, 227);
-    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
-
-    /* border-bottom: 1px solid black; */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,7 +42,6 @@ header {
     transition: background-image linear .1s;
     width: 363rem;
     height: 110rem;
-    background-image: url("../media/images/banner_small.png");
     background-size: cover;
     background-repeat: none;
 }
@@ -71,7 +62,9 @@ nav {
 }
 
 .navbarGomb {
-    transition: background-color ease-in-out .1s;
+    transition:
+        background-color ease-in-out .1s,
+        color linear .1s;;
 
     width: 15%;
 
@@ -82,7 +75,6 @@ nav {
 
     text-decoration: none;
 
-    color: rgb(71, 71, 71);
     background-color: transparent;
 
     vertical-align: middle;
@@ -90,42 +82,19 @@ nav {
 }
 
 .navbarGomb#aktiv {
-    background-color: #fcc510b0;
-    
-    box-shadow: 0 0 30px 1px rgb(207, 207, 207);
-
-    color: black;
     font-weight: 700;
 }
 
 .navbarGomb:hover {
-    background-color: #fcc510cb;
-}
-
-.navbarGomb:hover {
+    color:rgb(0, 0, 0);
     font-weight: 500;
 }
 
 .vl {
     height: 100rem;
 
-    border-left: 2px solid rgba(0, 0, 0, 0.432);
-
     margin: 0 40rem;
     display: flex;
-}
-
-.vertical-container {
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 main {
@@ -164,7 +133,6 @@ main p {
     align-items: center;
 }
 
-
 h1 {
     font-size: 50rem;
 }
@@ -186,7 +154,7 @@ h2, .colored h2 {
 
 footer {
     width: 100%;
-    
+
     margin: 0;
 
     font-size: 24rem;
@@ -265,24 +233,6 @@ input:checked+.slider:before {
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
-/* 
-@media screen and (max-width: 1849px) and (min-width: 1000px) {
-    :root {
-        font-size: .8px;
-    }
-}
-
-@media screen and (max-width: 999px) {
-    :root {
-        font-size: .8px;
-    }
-
-    #banner {
-        width: 300rem;
-        height: 80rem;
-    }
-} */
-
 footer .icons>a {
     transition: filter linear .1s;
     margin: 40rem 20rem;
@@ -291,15 +241,15 @@ footer .icons>a {
     background-size: cover;
 }
 
-#facebook {
+#facebook-icon {
     background-image: url("../media/images/facebook_icon.png");
 }
 
-#instagram {
+#instagram-icon {
     background-image: url("../media/images/instagram_icon.png");
 }
 
-#email {
+#email-icon {
     background-image: url("../media/images/email_icon.png")
 }
 
@@ -313,4 +263,172 @@ footer .icons>a>img {
 
 .icons>a>img {
     height: 50rem;
+}
+
+/* index.html */
+#index .colored {
+    width: 100%;
+    margin: 30rem 0;
+    padding: 80rem 0;
+}
+
+#index .padded {
+    padding: 0 15%;
+}
+
+#index .colored * {
+    font-size: 24rem;
+    font-weight: 500;
+}
+
+#index .colored img {
+    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
+}
+
+#index .colored img {
+    width: 40%;
+}
+
+#index .colored>div>.vl {
+    margin: 0 90rem;
+}
+
+#index .colored a {
+    margin-top: 30rem;
+}
+
+#index #yellow a {
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
+    padding: 15rem 40rem;
+
+    color: white;
+    background-color: rgb(41, 41, 41);
+
+    text-decoration: none;
+    border-radius: 100px;
+
+    box-shadow: 0 0 10px 1px rgb(46, 46, 46);
+}
+
+#index #yellow a:hover {
+    transform: translate(-4rem, -4rem);
+    box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
+}
+
+#index #red a {
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
+    padding: 15rem 40rem;
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    text-decoration: none;
+    border-radius: 100px;
+
+    box-shadow: 0 0 10px 1px rgb(134, 134, 134);
+}
+
+#index #red a:hover {
+    transform: translate(-4rem, -4rem);
+    box-shadow: 4px 4px 10px 1px rgb(134, 134, 134);
+}
+
+#index #green a {
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
+    padding: 15rem 40rem;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 41, 41);
+
+    text-decoration: none;
+    border-radius: 100px;
+
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0);
+}
+
+#index #green a:hover {
+    transform: translate(-4rem, -4rem);
+    box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
+}
+
+#index #programok-gomb {
+    transition: transform ease-in-out .2s;
+    position: fixed;
+    bottom: 65rem;
+    right: 100rem;
+
+    padding: 20rem 40rem;
+    background: linear-gradient(-20deg, rgba(123, 196, 255, 1) 0%, rgba(30, 154, 255, 1) 82%);
+    border-radius: 100px;
+    box-shadow: 0 0 10px 1px rgb(73, 73, 73);
+
+    color: white;
+    font-size: 26rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#index #programok-gomb:hover {
+    transform: scale(1.1);
+}
+
+#index #programok-gomb * {
+    font-size: inherit;
+}
+
+#index #programok-gomb img {
+    width: 20rem;
+
+    margin-left: 10rem;
+    filter: invert(100%);
+}
+
+/* kapcsolat.html */
+#kapcsolat #map {
+    width: 300rem;
+}
+
+#kapcsolat .colored {
+    width: 100%;
+    margin: 30rem 0;
+    padding: 80rem 0;
+
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#kapcsolat .colored>.horizontal {
+    padding: 0 15%;
+}
+
+#kapcsolat .colored p {
+    font-size: 28rem;
+    font-weight: 500;
+}
+
+#kapcsolat .colored>img {
+    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
+}
+
+#kapcsolat .colored>div>.vl {
+    margin: 0 90rem;
+}
+
+#kapcsolat #yellow {
+    background-color: #fcc510c4;
+}
+
+#kapcsolat .colored p {
+    margin: 0;
 }

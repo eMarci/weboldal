@@ -1,5 +1,9 @@
 @import url("base.css");
 
+h1, h2, footer, p {
+    color: white;
+}
+
 body {
     background-color: rgb(46, 45, 41);
 }
@@ -14,36 +18,56 @@ header {
 }
 
 .navbarGomb {
-    transition: color linear .1s;
     color: rgb(255, 255, 255);
 }
 
 .navbarGomb#aktiv {
     background-color: rgba(252, 197, 16, 0.918);
-    
-    box-shadow: 0 0 30px 1px rgb(22, 22, 20);
-
     color: black;
-    font-weight: 700;
+    box-shadow: 0 0 30px 1px rgb(22, 22, 20);
 }
 
 .navbarGomb:hover {
     background-color: rgba(252, 197, 16, 0.871);
-    color: black;
 }
 
 header>.vl {
     border-left: 2px solid rgba(190, 190, 190, 0.836);
 }
 
+.vl {
+    border-left: 2px solid rgba(0, 0, 0, 0.432);
+}
+
 .divider {
     filter: invert(100%);
 }
 
-h1, h2, footer, p {
-    color: white;
-}
-
 footer .icons>a {
     filter: invert(100%);
+}
+
+/* index.html */
+.colored {
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+}
+
+.colored img {
+    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
+}
+
+#yellow {
+    background-color: rgba(252, 197, 16, 0.769);
+}
+
+#red {
+    background-color: rgba(232, 18, 37, 0.769);
+}
+
+#green {
+    background-color: rgba(102, 204, 0, 0.769);
+}
+
+#yellow *, #green * {
+    color: rgb(0, 0, 0);
 }

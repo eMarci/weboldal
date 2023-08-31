@@ -1,0 +1,65 @@
+@import url("base.css");
+
+h1, h2, footer, p {
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+#banner {
+    background-image: url("../media/images/banner_small.png");
+}
+
+.navbarGomb {
+    color: rgb(71, 71, 71);
+}
+
+.navbarGomb#aktiv {
+    background-color: rgba(252, 197, 16, 0.69);
+    color: black;
+    box-shadow: 0 0 30px 1px rgb(207, 207, 207);
+}
+
+.navbarGomb:hover {
+    background-color: rgba(252, 197, 16, 0.796);
+}
+
+.vl {
+    border-left: 2px solid rgba(0, 0, 0, 0.432);
+}
+
+.divider {
+    filter: invert(0%);
+}
+
+footer .icons>a {
+    filter: invert(0%);
+}
+
+/* index.html */
+.colored {
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+#yellow {
+    background-color: rgba(252, 197, 16, 0.769);
+}
+
+#red {
+    background-color: rgba(232, 18, 37, 0.769);
+}
+
+#green {
+    background-color: rgba(102, 204, 0, 0.769);
+}
+
+#red * {
+    color: white;
+}
