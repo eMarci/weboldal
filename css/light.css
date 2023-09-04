@@ -22,13 +22,13 @@ header {
 }
 
 .navbarGomb#aktiv {
-    background-color: rgba(252, 197, 16, 0.69);
+    background-color: rgba(252, 195, 16, 0.69);
     color: black;
     box-shadow: 0 0 30px 1px rgb(207, 207, 207);
 }
 
 .navbarGomb:hover {
-    background-color: rgba(252, 197, 16, 0.796);
+    background-color: rgba(252, 195, 16, 0.796);
 }
 
 .vl {
