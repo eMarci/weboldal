@@ -51,9 +51,10 @@ header#shrunk {
 #banner {
     transition: background-image linear .1s;
     font-size: inherit;
-    width: 26em;
+    width: 27em;
     height: 8em;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 header>nav * {
@@ -444,4 +445,57 @@ footer .icons>a>img {
 
 #kapcsolat .colored p {
     margin: 0;
+}
+
+form {
+    font-size: 20rem;
+}
+
+form * {
+    font-size: inherit;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+fieldset:last-of-type {
+    justify-content: center !important;
+}
+
+input:not(input[type="submit"]), textarea {
+    padding: 0.5em 1em;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: .8em;
+}
+
+#nev {
+    margin-right: 0.6em;
+}
+
+textarea, #targy {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    padding: 0.6em 2em;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    background-color: white;
+    border-radius: 10em;
+    /* box-shadow: 0 0 .6em rgb(207, 207, 207); */
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
 }
