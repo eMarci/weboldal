@@ -15,8 +15,8 @@ html * {
 body {
     transition: background-color linear .1s;
 
-    margin: 0;
-    margin-bottom: 80rem;
+    margin: 200rem 0 80rem 0;
+    /* margin-bottom: 80rem; */
 
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body {
 }
 
 header {
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
     width: 100%;
     padding: 30rem 0;
     margin-bottom: 50rem;
@@ -36,14 +37,23 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header#shrunk {
+    padding: 10rem 0;
+    font-size: 10px;
 }
 
 #banner {
     transition: background-image linear .1s;
-    width: 363rem;
-    height: 110rem;
+    font-size: inherit;
+    width: 26em;
+    height: 8em;
     background-size: cover;
-    background-repeat: none;
 }
 
 header>nav * {
@@ -91,7 +101,8 @@ nav {
 }
 
 .vl {
-    height: 100rem;
+    font-size: inherit;
+    height: 7em;
 
     margin: 0 40rem;
     display: flex;
@@ -276,7 +287,7 @@ footer .icons>a>img {
     padding: 0 15%;
 }
 
-#index .colored * {
+#index .colored p {
     font-size: 24rem;
     font-weight: 500;
 }
@@ -295,6 +306,8 @@ footer .icons>a>img {
 
 #index .colored a {
     margin-top: 30rem;
+    font-size: 24rem;
+    font-weight: 500;
 }
 
 #index #yellow a {
