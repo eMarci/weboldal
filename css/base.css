@@ -277,6 +277,18 @@ footer .icons>a>img {
     height: 50rem;
 }
 
+#yellow {
+    background-color: rgba(252, 197, 16, 0.769);
+}
+
+#red {
+    background-color: rgba(232, 18, 37, 0.769);
+}
+
+#green {
+    background-color: rgba(102, 204, 0, 0.769);
+}
+
 /* index.html */
 #index .colored {
     width: 100%;
@@ -435,10 +447,6 @@ footer .icons>a>img {
 
 #kapcsolat .colored>div>.vl {
     margin: 0 90rem;
-}
-
-#kapcsolat #yellow {
-    background-color: rgba(252, 197, 16, 0.769);
 }
 
 #kapcsolat .colored p {
