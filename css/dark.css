@@ -47,25 +47,32 @@ footer .icons>a {
     filter: invert(100%);
 }
 
+.field {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(32, 32, 30);
+}
+
+.field:focus {
+    background-color: rgb(54, 53, 49);
+}
+
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 30);
+    box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0.3em 0.4em 0 rgb(102, 204, 0);
+}
+
 /* index.html */
 .colored {
     box-shadow: 0 0 20px 1px rgb(0, 0, 0);
 }
 
-.colored img {
+#index .colored img {
     box-shadow: 0 0 10px 1px rgb(27, 27, 27);
-}
-
-#yellow {
-    background-color: rgba(252, 197, 16, 0.769);
-}
-
-#red {
-    background-color: rgba(232, 18, 37, 0.769);
-}
-
-#green {
-    background-color: rgba(102, 204, 0, 0.769);
 }
 
 #yellow *, #green * {

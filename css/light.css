@@ -43,23 +43,35 @@ footer .icons>a {
     filter: invert(0%);
 }
 
+.field {
+    border: 2px solid rgb(121, 121, 121);
+    background-color: rgb(253, 253, 253);
+}
+
+.field:focus {
+    background-color: rgb(230, 230, 230);
+}
+
+input[type="submit"] {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0.3em 0.4em 0 rgb(244, 206, 81);
+}
+
 /* index.html */
 .colored {
     box-shadow: 0 0 20px 1px rgb(112, 112, 112);
 }
 
-#yellow {
-    background-color: rgba(252, 197, 16, 0.769);
-}
-
-#red {
-    background-color: rgba(232, 18, 37, 0.769);
-}
-
-#green {
-    background-color: rgba(102, 204, 0, 0.769);
-}
-
 #red * {
     color: white;
+}
+
+/* kapcsolat.html */
+#kapcsolat .colored {
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
 }
