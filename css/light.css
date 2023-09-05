@@ -76,7 +76,15 @@ input[type="submit"]:hover {
     box-shadow: 0 0 0 1px rgb(0, 0, 0);
 }
 
-#index .event-card:hover {
+#index #cards>div:nth-child(1)>a:hover {
+    box-shadow: 0 0 0 3px rgb(252, 195, 16);
+}
+
+#index #cards>div:nth-child(2)>a:hover {
+    box-shadow: 0 0 0 3px rgb(232, 18, 37);
+}
+
+#index #cards>div:nth-child(3)>a:hover {
     box-shadow: 0 0 0 3px rgb(102, 204, 0);
 }
 
