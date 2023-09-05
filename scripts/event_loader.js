@@ -9,24 +9,24 @@ function load(content) {
     }
     document.getElementById('no-events').setAttribute('style', 'display: none;');
     var html = "";
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < event_count; i++) {
         var client = new XMLHttpRequest();
-        client.open('GET', events[0].cover.source);
+        client.open('GET', events[i].cover.source);
         client.responseType = "blob";
         client.onload = function () {
             var image = URL.createObjectURL(client.response);
             html += `<div>
     <a href="" class="vertical event-card">
         <img src="${image}" alt="">
-        <h3>${events[0].name}</h3>
+        <h3>${events[i].name}</h3>
         <p>
-            ${events[0].description}
+            ${events[i].description}
         </p>
         <p>
-            <strong>Helyszín:</strong> ${events[0].place.name}
+            <strong>Helyszín:</strong> ${events[i].place.name}
         </p>
         <p>
-            <strong>Időpont:</strong> ${events[0].start_time}
+            <strong>Időpont:</strong> ${events[i].start_time}
         </p>
     </a>
 </div>`;
@@ -37,8 +37,9 @@ function load(content) {
 }
 
 function main() {
+    var key = "EAAVGbiFIyVMBO4qGWeSZBvZAATIsngfwOlri3iW9GrDOxXaY2xb8F7AzEI1ynXVGKDpuZCcAuGBXDtQ9RscS79reyjXNHDflM1Ytdmt8yqb1qzFrvQ4kXvpAZAZAKrnncZC9oQinu66SVKhSZBizjE1jlxEhSAhycoVQthJNuA789wrTfREZAnteE0ILwdIMwZCUsZCgc34aM5U2j6lUgZD";
     var client = new XMLHttpRequest();
-    client.open('GET', '../events.json');
+    client.open('GET', 'https://graph.facebook.com/112998758567158?fields=events{name,description,place,start_time,attending_count,cover}&access_token=' + key);
     client.onload = function () {
         var content = client.responseText;
         load(content);
