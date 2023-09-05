@@ -289,15 +289,15 @@ footer .icons>a>img {
     background-color: rgba(102, 204, 0, 0.769);
 }
 
+.padded {
+    padding: 0 15%;
+}
+
 /* index.html */
 #index .colored {
     width: 100%;
     margin: 30rem 0;
     padding: 80rem 0;
-}
-
-#index .padded {
-    padding: 0 15%;
 }
 
 #index .colored p {
@@ -432,10 +432,6 @@ footer .icons>a>img {
     align-items: center;
 }
 
-#kapcsolat .colored>.horizontal {
-    padding: 0 15%;
-}
-
 #kapcsolat .colored p {
     font-size: 28rem;
     font-weight: 500;
@@ -505,4 +501,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     padding: 0.6em 2.5em;
     cursor: pointer;
+}
+
+/* rolunk.html */
+.content {
+    padding: 0 80rem;
 }
