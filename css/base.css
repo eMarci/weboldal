@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) .2s;
     width: 100%;
     padding: 30rem 0;
     margin-bottom: 50rem;
@@ -121,8 +121,8 @@ main {
 
 main * {
     transition:
-        background-color cubic-bezier(0.165, 0.84, 0.44, 1) .1s,
-        box-shadow cubic-bezier(0.165, 0.84, 0.44, 1) .1s;
+        background-color cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
+        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
 }
 
 main p {
@@ -291,6 +291,11 @@ footer .icons>a>img {
 
 .padded {
     padding: 0 15%;
+    box-sizing: border-box;
+}
+
+.stretched {
+    width: 100%;
 }
 
 /* index.html */
@@ -398,6 +403,7 @@ footer .icons>a>img {
     font-size: 26rem;
     font-weight: 700;
     text-decoration: none;
+    z-index: 1;
 }
 
 #index #programok-gomb:hover {
@@ -413,6 +419,51 @@ footer .icons>a>img {
 
     margin-left: 10rem;
     filter: invert(100%);
+}
+
+#index #cards {
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+#index #cards>div {
+    width: 30%;
+    margin: 50rem;
+}
+
+#index .event-card {
+    transition:
+        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
+        transform cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
+    transform: scale(1);
+    text-decoration: none;
+    padding: 20rem;
+    align-items: start;
+}
+
+#index .event-card:hover {
+    transform: scale(1.02);
+}
+
+#index .event-card strong {
+    font-size: inherit;
+}
+
+#index .event-card>h3 {
+    font-size: 28rem;
+    text-align: left;
+}
+
+#index .event-card>p {
+    margin: 0;
+}
+
+#index .event-card>p:not(:first-of-type) {
+    margin-top: 20rem;
+}
+
+#index .event-card>img {
+    width: 100%;
 }
 
 /* kapcsolat.html */
@@ -490,8 +541,8 @@ textarea {
 
 input[type="submit"] {
     transition:
-        box-shadow cubic-bezier(0.165, 0.84, 0.44, 1) .1s,
-        padding cubic-bezier(0.165, 0.84, 0.44, 1) .1s;
+        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
+        padding cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
     padding: 0.6em 2em;
     font-weight: 700;
     border-radius: 10em;
