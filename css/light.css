@@ -71,6 +71,19 @@ input[type="submit"]:hover {
     color: white;
 }
 
+#index .event-card {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+}
+
+#index .event-card:hover {
+    box-shadow: 0 0 0 3px rgb(102, 204, 0);
+}
+
+#index .event-card>h3 {
+    color: black;
+}
+
 /* kapcsolat.html */
 #kapcsolat .colored {
     box-shadow: 0 0 20px 1px rgb(112, 112, 112);
