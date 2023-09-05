@@ -75,7 +75,7 @@ nav {
 .navbarGomb {
     transition:
         background-color ease-in-out .1s,
-        color linear .1s;;
+        color linear .1s;
 
     width: 15%;
 
@@ -121,8 +121,8 @@ main {
 
 main * {
     transition:
-        background-color linear .1s,
-        box-shadow linear .1s;
+        background-color cubic-bezier(0.165, 0.84, 0.44, 1) .1s,
+        box-shadow cubic-bezier(0.165, 0.84, 0.44, 1) .1s;
 }
 
 main p {
