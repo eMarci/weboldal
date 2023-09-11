@@ -1,7 +1,7 @@
 function load(content) {
     const cards = document.getElementById('cards');
     var data = JSON.parse(content);
-    var events = data.events.data;
+    var events = data.data;
     var event_count = events.length;
     if (event_count == 0) {
         document.getElementById('no-events').removeAttribute('style');
@@ -39,9 +39,10 @@ function load(content) {
 function main() {
     var key = "EAAVGbiFIyVMBO4qGWeSZBvZAATIsngfwOlri3iW9GrDOxXaY2xb8F7AzEI1ynXVGKDpuZCcAuGBXDtQ9RscS79reyjXNHDflM1Ytdmt8yqb1qzFrvQ4kXvpAZAZAKrnncZC9oQinu66SVKhSZBizjE1jlxEhSAhycoVQthJNuA789wrTfREZAnteE0ILwdIMwZCUsZCgc34aM5U2j6lUgZD";
     var client = new XMLHttpRequest();
-    client.open('GET', 'https://graph.facebook.com/112998758567158?fields=events{name,description,place,start_time,attending_count,cover}&access_token=' + key);
+    client.open('GET', 'https://graph.facebook.com/112998758567158/events?fields=name,description,place,start_time,attending_count,cover&access_token=' + key);
     client.onload = function () {
         var content = client.responseText;
+        console.log(content);
         load(content);
     }
     client.onerror = function () {
