@@ -53,11 +53,6 @@ function init() {
     return dark;
 }
 
-window.onload = function () {
-    // let dark = init();
-    
-};
-
 window.onunload = function () {
     createCookie("style", isDark());
 };
@@ -71,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('checked');
             setDark();
         } else {
+            console.log('unchecked');
             setLight();
         }
     }
