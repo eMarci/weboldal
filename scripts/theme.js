@@ -53,24 +53,25 @@ function init() {
     return dark;
 }
 
-// window.onload = function () {
-//     let dark = init();
-//     let ts = document.getElementById('themeSwitch');
-//     ts.checked = dark;
-//     ts.onchange = function () {
-//         if (ts.checked) {
-//             console.log('checked');
-//             setDark();
-//         } else {
-//             setLight();
-//         }
-//     }
-// };
+window.onload = function () {
+    // let dark = init();
+    
+};
 
 window.onunload = function () {
     createCookie("style", isDark());
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    init();
+    let dark = init();
+    let ts = document.getElementById('themeSwitch');
+    ts.checked = dark;
+    ts.onchange = function () {
+        if (ts.checked) {
+            console.log('checked');
+            setDark();
+        } else {
+            setLight();
+        }
+    }
 });
