@@ -15,59 +15,80 @@ function createCookie(name, value) {
 }
 
 function readCookie() {
-    let x = JSON.parse(document.cookie).style;
-    console.log(x);
-    return x;
+    try {
+        let x = JSON.parse(document.cookie).style;
+        return x;
+    } catch (error) {
+        return false;
+    }
 }
 
 // function init() {
+//     let style = document.createElement('link');
+//     style.id = 'style';
+//     style.setAttribute('rel', 'stylesheet');
 //     let dark = readCookie('style');
-//     let sw = document.getElementById('themeSwitch');
-//     sw.checked = dark;
 //     if (dark) {
-//         setDark();
+//         style.setAttribute('href', 'css/dark.css');
 //     } else {
-//         setLight();
+//         style.setAttribute('href', 'css/light.css');
 //     }
-//     console.log(document.getElementById('style').getAttribute('href'));
-//     sw.onchange = function () {
-//         if (sw.checked) {
+//     document.head.appendChild(style);
+//     return dark;
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     let dark = init();
+//     let ts = document.getElementById('themeSwitch');
+//     ts.checked = dark;
+//     ts.onchange = function () {
+//         if (ts.checked) {
+//             console.log('checked');
 //             setDark();
 //         } else {
+//             console.log('unchecked');
 //             setLight();
+//         }
+//     }
+// });
+
+// document.onreadystatechange = (e) => {
+//     switch (document.readyState) {
+//         case 'interactive': {
+//             let style = document.createElement('link');
+//             style.id = 'style';
+//             style.setAttribute('rel', 'stylesheet');
+//             let dark = readCookie('style');
+//             if (dark) {
+//                 style.setAttribute('href', 'css/dark.css');
+//             } else {
+//                 style.setAttribute('href', 'css/light.css');
+//             }
+//             document.head.appendChild(style);
+//             let sw = document.getElementById('themeSwitch');
+//             sw.checked = dark;
+//             sw.onchange = swap;
+//             break;
 //         }
 //     }
 // }
 
-function init() {
-    let style = document.createElement('link');
-    style.id = 'style';
-    style.setAttribute('rel', 'stylesheet');
-    let dark = readCookie('style');
-    if (dark) {
-        style.setAttribute('href', 'css/dark.css');
+// window.onunload = () => {
+//     createCookie("style", isDark());
+// };
+
+function swap() {
+    if (document.getElementById('themeSwitch').checked) {
+        document.getElementById('style').setAttribute('href', 'css/dark.css');
     } else {
-        style.setAttribute('href', 'css/light.css');
+        document.getElementById('style').setAttribute('href', 'css/light.css');
     }
-    document.head.appendChild(style);
-    return dark;
 }
 
-window.onunload = function () {
-    createCookie("style", isDark());
+document.onload = () => {
+    console.log('loaded');
+    document.getElementById('themeSwitch').onchange = () => {
+        console.log('xs');
+        swap();
+    };
 };
-
-document.addEventListener('DOMContentLoaded', () => {
-    let dark = init();
-    let ts = document.getElementById('themeSwitch');
-    ts.checked = dark;
-    ts.onchange = function () {
-        if (ts.checked) {
-            console.log('checked');
-            setDark();
-        } else {
-            console.log('unchecked');
-            setLight();
-        }
-    }
-});
