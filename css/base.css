@@ -278,15 +278,15 @@ footer .icons>a>img {
     height: 50rem;
 }
 
-#yellow {
+.yellow {
     background-color: rgba(252, 195, 16, 0.769);
 }
 
-#red {
+.red {
     background-color: rgba(232, 18, 37, 0.769);
 }
 
-#green {
+.green {
     background-color: rgba(102, 204, 0, 0.769);
 }
 
