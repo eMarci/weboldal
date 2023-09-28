@@ -19,27 +19,15 @@ html * {
 
 body {
     transition: background-color linear .1s;
-
     margin: 200rem 0 80rem 0;
-    /* margin-bottom: 80rem; */
-
+    /* margin-bottom: 80rem;
+	*/
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
     overflow: scroll;
-}
-
-body {
-    color: black;
-    background-color: white;
-}
-
-[dark] {
-    color: white;
-    background-color: rgb(46, 45, 41);
 }
 
 header {
@@ -47,34 +35,18 @@ header {
     width: 100%;
     padding: 30rem 0;
     margin-bottom: 50rem;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     position: fixed;
     top: 0;
     z-index: 1;
 }
 
-header {
-    background-color: rgb(228, 227, 227);
-    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
-}
-
-[dark] header {
-    background-color: rgb(26, 26, 26);
-    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
-}
-
-header#shrunk {
+header#kicsi {
     padding: 10rem 0;
     font-size: 10px;
-}
-
-[dark] header>.vl {
-    border-left: 2px solid rgba(190, 190, 190, 0.836);
 }
 
 #banner {
@@ -86,20 +58,10 @@ header#shrunk {
     background-repeat: no-repeat;
 }
 
-#banner {
-    background-image: url("../media/images/banner_small.png");
-}
-
-[dark] #banner {
-    background-image: url("../media/images/banner_dark_small.png");
-}
-
 nav {
     margin: 14rem 0;
-
     width: 100%;
     max-width: 40vw;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,48 +72,19 @@ nav * {
 }
 
 .navbarGomb {
-    transition:
-        background-color ease-in-out .1s,
-        color linear .1s;
-
+    transition: background-color ease-in-out .1s, color linear .1s;
     width: 15%;
-
     padding: 18rem 24rem;
     margin: auto;
-
     border-radius: 100px;
-
     text-decoration: none;
-
     background-color: transparent;
-
     vertical-align: middle;
     text-align: center;
 }
 
-.navbarGomb {
-    color: rgb(71, 71, 71);
-}
-
-[dark] .navbarGomb {
-    color: rgb(255, 255, 255);
-}
-
 .navbarGomb#aktiv {
     font-weight: 700;
-}
-
-.navbarGomb#aktiv {
-    background-color: rgba(252, 195, 16, 0.69);
-    color: black;
-    box-shadow: 0 0 30px 1px rgb(207, 207, 207);
-}
-
-[dark] .navbarGomb#aktiv {
-    background-color: rgba(252, 195, 16, 0.918);
-    /* background-color: rgba(102, 204, 0, 0.918); */
-    color: black;
-    box-shadow: 0 0 30px 1px rgb(22, 22, 20);
 }
 
 .navbarGomb:hover {
@@ -159,26 +92,15 @@ nav * {
     font-weight: 500;
 }
 
-.navbarGomb:hover {
-    background-color: rgba(252, 195, 16, 0.796);
-}
-
-[dark] .navbarGomb:hover {
-    background-color: rgba(252, 195, 16, 0.871);
-    /* background-color: rgba(102, 204, 0, 0.871); */
-}
-
 .vl {
     font-size: inherit;
     height: 7em;
-
     margin: 0 40rem;
     display: flex;
 }
 
 main {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -187,9 +109,7 @@ main {
 }
 
 main * {
-    transition:
-        background-color cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
-        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
+    transition: background-color cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s, box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
 }
 
 main p {
@@ -232,21 +152,10 @@ h2,
     background-size: cover;
 }
 
-.divider {
-    filter: invert(0%);
-}
-
-[dark] .divider {
-    filter: invert(100%);
-}
-
 footer {
     width: 100%;
-
     margin: 0;
-
     font-size: 24rem;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -305,7 +214,8 @@ footer img {
     left: var(--slider-offset, 0.3em);
     top: 50%;
     transform: translateY(-50%);
-    /* background: linear-gradient(40deg, #ff0080, #ff8c00 70%); */
+    /* background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+	*/
     background: linear-gradient(-120deg, #ffee00, #ff8c00 70%);
     transition: .4s;
 }
@@ -317,7 +227,7 @@ input:checked+.slider {
 input:checked+.slider:before {
     left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
     background: #303136;
-    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
@@ -327,14 +237,6 @@ footer .icons>a {
     width: 30rem;
     height: 30rem;
     background-size: cover;
-}
-
-footer .icons>a {
-    filter: invert(0%);
-}
-
-[dark] footer .icons>a {
-    filter: invert(100%);
 }
 
 #facebook-icon {
@@ -359,14 +261,6 @@ footer .icons>a>img {
 
 .icons>a>img {
     height: 50rem;
-}
-
-.colored {
-    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
-}
-
-[dark] .colored {
-    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
 }
 
 .yellow {
@@ -401,12 +295,52 @@ p {
     color: inherit;
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+#banner {
+    background-image: url("../media/images/banner_small.png");
+}
+
+.navbarGomb {
+    color: rgb(71, 71, 71);
+}
+
+.navbarGomb#aktiv {
+    background-color: rgba(252, 195, 16, 0.69);
+    color: black;
+    box-shadow: 0 0 30px 1px rgb(207, 207, 207);
+}
+
+.navbarGomb:hover {
+    background-color: rgba(252, 195, 16, 0.796);
+}
+
 .vl {
     border-left: 2px solid rgba(0, 0, 0, 0.432);
 }
 
-[dark] .vl {
-    border-left: 2px solid rgba(0, 0, 0, 0.432);
+.divider {
+    filter: invert(0%);
+}
+
+footer .icons>a {
+    filter: invert(0%);
+}
+
+.yellow,
+.green {
+    color: black;
+}
+
+.red {
+    color: white;
 }
 
 .colored {
@@ -436,14 +370,6 @@ p {
     margin-top: 30rem;
     font-size: 24rem;
     font-weight: 500;
-}
-
-.yellow, .green {
-    color: black;
-}
-
-.red {
-    color: white;
 }
 
 .yellow a {
@@ -507,4 +433,57 @@ p {
 .green a:hover {
     transform: translate(-4rem, -4rem);
     box-shadow: 4px 4px 10px 1px rgb(0, 0, 0);
+}
+
+/* DARK THEME */
+body[dark] {
+    color: white;
+    background-color: rgb(46, 45, 41);
+}
+
+body[dark] header {
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
+}
+
+body[dark] #banner {
+    background-image: url("../media/images/banner_dark_small.png");
+}
+
+body[dark] .navbarGomb {
+    color: rgb(255, 255, 255);
+}
+
+body[dark] .navbarGomb#aktiv {
+    background-color: rgba(252, 195, 16, 0.918);
+    /* background-color: rgba(102, 204, 0, 0.918);
+	*/
+    color: black;
+    box-shadow: 0 0 30px 1px rgb(22, 22, 20);
+}
+
+body[dark] .navbarGomb:hover {
+    background-color: rgba(252, 195, 16, 0.871);
+    /* background-color: rgba(102, 204, 0, 0.871);
+	*/
+}
+
+body[dark] header>.vl {
+    border-left: 2px solid rgba(190, 190, 190, 0.836);
+}
+
+body[dark] .vl {
+    border-left: 2px solid rgba(0, 0, 0, 0.432);
+}
+
+body[dark] .divider {
+    filter: invert(100%);
+}
+
+body[dark] footer .icons>a {
+    filter: invert(100%);
+}
+
+body[dark] .colored {
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
 }
