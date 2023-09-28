@@ -1,0 +1,76 @@
+@import url('base.css');
+/* 
+form {
+    font-size: 20rem;
+}
+
+form * {
+    font-size: inherit;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+fieldset:last-of-type {
+    justify-content: center !important;
+}
+
+.field {
+    padding: 0.5em 1em;
+    border-radius: .8em;
+}
+
+#nev {
+    margin-right: 0.6em;
+}
+
+textarea,
+#targy {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    transition:
+        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
+        padding cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
+
+    padding: 0.6em 2em;
+    font-weight: 700;
+    border-radius: 10em;
+    border-style: solid;
+}
+
+input[type="submit"]:hover {
+    padding: 0.6em 2.5em;
+    cursor: pointer;
+}
+
+.field {
+    border: 2px solid rgb(121, 121, 121);
+    background-color: rgb(253, 253, 253);
+}
+
+.field:focus {
+    background-color: rgb(230, 230, 230);
+}
+
+input[type="submit"] {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0.3em 0.4em 0 rgb(244, 206, 81);
+} */

@@ -1,4 +1,4 @@
-@import url('base3.css');
+@import url('base.css');
 
 #programok-gomb {
     transition: transform ease-in-out .2s;
