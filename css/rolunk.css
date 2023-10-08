@@ -1,1 +1,49 @@
 @import url('base.css');
+
+h2 {
+    margin: 30rem 0 0 0;
+    padding: 20rem 0rem;
+}
+
+main>.stretched>div {
+    display: flex;
+    flex-direction: column;
+}
+
+main>.stretched>div>div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main>.stretched>div>:first-child {
+    border-bottom: 5px solid black;
+    /* border-top: 6px solid black; */
+    border-radius: 4px;
+}
+
+/* p {
+    padding: 10rem 20rem;
+} */
+
+/* .stretched>.padded>div {
+    border-left: 10px solid black;
+    border-radius: 7px;
+} */
+
+main>.stretched>.padded:first-of-type>h2 {
+    margin-top: 0;
+}
+
+main>.stretched>.padded:nth-of-type(3n-2)>:first-child {
+    border-color: rgb(252, 195, 16);
+}
+
+main>.stretched>.padded:nth-of-type(3n-1)>:first-child {
+    border-color: rgb(232, 18, 37);
+}
+
+main>.stretched>.padded:nth-of-type(3n)>:first-child {
+    border-color: rgb(102, 204, 0);
+}
