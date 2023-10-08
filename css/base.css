@@ -21,7 +21,6 @@ body {
     transition: background-color linear .1s;
 
     margin: 200rem 0 80rem 0;
-    /* margin-bottom: 80rem; */
 
     display: flex;
     flex-direction: column;
