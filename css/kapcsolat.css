@@ -1,5 +1,9 @@
 @import url('base.css');
-/* 
+
+main>div:nth-of-type(3)>img {
+    width: 20%;
+}
+
 form {
     font-size: 20rem;
 }
@@ -61,8 +65,17 @@ input[type="submit"]:hover {
     background-color: rgb(253, 253, 253);
 }
 
+[dark] .field {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(32, 32, 30);
+}
+
 .field:focus {
     background-color: rgb(230, 230, 230);
+}
+
+[dark] .field:focus {
+    background-color: rgb(54, 53, 49);
 }
 
 input[type="submit"] {
@@ -71,6 +84,16 @@ input[type="submit"] {
     box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
 }
 
+[dark] input[type="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 30);
+    box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
+}
+
 input[type="submit"]:hover {
     box-shadow: 0.3em 0.4em 0 rgb(244, 206, 81);
-} */
+}
+
+[dark] input[type="submit"]:hover {
+    box-shadow: 0.3em 0.4em 0 rgb(102, 204, 0);
+}
