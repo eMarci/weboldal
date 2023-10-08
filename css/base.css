@@ -372,6 +372,7 @@ footer .icons>a>img {
 
 .icons>a>img {
     height: 50rem;
+    width: auto;
 }
 
 .colored {
@@ -433,7 +434,7 @@ p {
     font-weight: 500;
 }
 
-.colored img {
+.colored :not(a)>img, .colored>img {
     box-shadow: 0 0 10px 1px rgb(27, 27, 27);
 }
 
