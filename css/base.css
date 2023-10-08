@@ -38,14 +38,13 @@ body {
 
 [dark] {
     color: white;
-    background-color: rgb(46, 45, 41);
+    background-color: rgb(43, 42, 40);
 }
 
 header {
     transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) .2s;
     width: 100%;
     padding: 30rem 0;
-    margin-bottom: 50rem;
 
     display: flex;
     flex-direction: row;
@@ -219,7 +218,10 @@ h2,
 .colored h2 {
     font-size: 40rem;
     font-weight: 700;
-    margin: 0 0 50rem 0;
+}
+
+h3 {
+    font-size: 30rem;
 }
 
 .divider {
@@ -243,6 +245,8 @@ footer {
     width: 100%;
 
     margin: 0;
+    margin-top: 30rem;
+    padding: 30rem 0;
 
     font-size: 24rem;
 
@@ -253,12 +257,22 @@ footer {
     align-items: center;
 }
 
+footer {
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 0 20px 1px rgb(112, 112, 112);
+}
+
+[dark] footer {
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 0 10px 1px rgb(27, 27, 27);
+}
+
 footer * {
     font-size: inherit;
 }
 
 footer img {
-    height: 150rem;
+    height: 100rem;
 }
 
 /* The switch - the box around the slider */
@@ -322,7 +336,7 @@ input:checked+.slider:before {
 
 footer .icons>a {
     transition: filter linear .1s;
-    margin: 40rem 20rem;
+    margin: 40rem 20rem 10rem 20rem;
     width: 30rem;
     height: 30rem;
     background-size: cover;
