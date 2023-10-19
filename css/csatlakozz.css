@@ -1,41 +1,57 @@
 @import url('base.css');
 
 .button {
-    font-size: 20rem;
-    text-decoration: none;
     transition:
-        box-shadow cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s,
-        padding cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
 
-    padding: 0.6em 2em;
-    margin: 30rem 0 60rem 0;
-    font-weight: 700;
-    border-radius: 10em;
-    border-style: solid;
-    border-width: 2px;
+    font-weight: 500;
+    font-size: 24rem;
 
-    border-color: black;
+    margin: 40rem 0 50rem 0;
+    padding: 15rem 40rem;
+
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    box-shadow: 0.2em 0.3em 0 rgb(0, 0, 0);
+
+    text-decoration: none;
+    border-radius: 100px;
 }
 
-.button:hover {
-    padding: 0.6em 2.5em;
-    cursor: pointer;
+.button {
+    border: 1px solid black;
+    box-shadow: 0 0 10px 1px rgb(134, 134, 134);
 }
-
-.button:hover {
-    /* box-shadow: 0.3em 0.4em 0 rgb(244, 206, 81); */
-    box-shadow: 0.3em 0.4em 0 rgb(232, 18, 37);
-}
-
 
 [dark] .button {
-    color: rgb(255, 255, 255);
-    background-color: rgb(32, 32, 30);
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+}
+
+.button:hover {
+    transform: translate(-4rem, -4rem);
+}
+
+.button:hover {
+    box-shadow: 4px 4px 10px 1px rgb(134, 134, 134);
 }
 
 [dark] .button:hover {
-    box-shadow: 0.3em 0.4em 0 rgb(102, 204, 0);
+    box-shadow: 4px 4px 20px 1px rgb(0, 0, 0);
+}
+
+#content>div:nth-of-type(1)>.button {
+    background-color: rgb(253, 213, 83);
+}
+
+[dark] #content>div:nth-of-type(1)>.button {
+    background-color: rgb(255, 203, 32);
+}
+
+#content>div:nth-of-type(2)>.button {
+    background-color: rgb(157, 222, 93);
+}
+
+[dark] #content>div:nth-of-type(2)>.button {
+    background-color: rgb(134, 219, 48);
 }
