@@ -224,6 +224,10 @@ h3 {
     font-size: 30rem;
 }
 
+strong {
+    font-size: 24rem;
+}
+
 .divider {
     transition: filter linear .1s;
     height: 80rem;

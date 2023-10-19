@@ -1,1 +1,57 @@
 @import url('base.css');
+
+.button {
+    transition:
+        transform ease-in-out .1s,
+        box-shadow ease-in-out .1s;
+
+    font-weight: 500;
+    font-size: 24rem;
+
+    margin: 40rem 0 50rem 0;
+    padding: 15rem 40rem;
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.button {
+    border: 1px solid black;
+    box-shadow: 0 0 10px 1px rgb(134, 134, 134);
+}
+
+[dark] .button {
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+}
+
+.button:hover {
+    transform: translate(-4rem, -4rem);
+}
+
+.button:hover {
+    box-shadow: 4px 4px 10px 1px rgb(134, 134, 134);
+}
+
+[dark] .button:hover {
+    box-shadow: 4px 4px 20px 1px rgb(0, 0, 0);
+}
+
+#content>div:nth-of-type(1)>.button {
+    background-color: rgb(253, 213, 83);
+}
+
+[dark] #content>div:nth-of-type(1)>.button {
+    background-color: rgb(255, 203, 32);
+}
+
+#content>div:nth-of-type(2)>.button {
+    background-color: rgb(157, 222, 93);
+}
+
+[dark] #content>div:nth-of-type(2)>.button {
+    background-color: rgb(134, 219, 48);
+}
